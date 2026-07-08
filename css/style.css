@@ -550,6 +550,12 @@ header{
     9.0 SKILLS
 ==========================================================*/
 
+.skills{
+
+    background:var(--section-bg);
+
+}
+
 .skills-grid{
 
     display:grid;
@@ -564,17 +570,21 @@ header{
 
     background:var(--white);
 
-    padding:35px;
+    padding:40px;
 
-    border-radius:15px;
+    border-radius:18px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
 
 }
 
 .skill-card:hover{
 
     transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
 
 }
 
@@ -584,14 +594,35 @@ header{
 
     color:var(--primary-color);
 
+    font-size:1.4rem;
+
+}
+
+.skill-card h3 i{
+
+    color:var(--secondary-color);
+
+    margin-right:10px;
+
 }
 
 .skill-card ul li{
 
-    margin-bottom:15px;
+    margin-bottom:18px;
+
+    color:#475569;
+
+    font-weight:500;
 
 }
 
+.skill-card ul li i{
+
+    color:var(--secondary-color);
+
+    margin-right:10px;
+
+}
 /*==========================================================
     10.0 PROJECTS
 ==========================================================*/
