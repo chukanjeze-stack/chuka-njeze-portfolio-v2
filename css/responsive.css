@@ -7,9 +7,7 @@
     .hero{
 
         grid-template-columns:1fr;
-
         text-align:center;
-
         gap:50px;
 
     }
@@ -72,7 +70,7 @@
 
     .hero{
 
-        padding-top:100px;
+        padding-top:70px;
 
     }
 
@@ -90,30 +88,67 @@
 
     .hero-image img{
 
-        width:280px;
-
-        height:280px;
+        width:270px;
+        height:270px;
 
     }
 
-    .skills-grid{
+    .skills-grid,
+    .competency-grid,
+    .project-grid,
+    .contact-container{
 
         grid-template-columns:1fr;
 
     }
 
-    .competency-grid{
+    .project-links{
 
-        grid-template-columns:1fr;
-
-    }
-
-    .project-grid{
-
-        grid-template-columns:1fr;
+        flex-direction:column;
 
     }
 
+    .footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+.nav-links{
+
+    display:none;
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    flex-direction:column;
+
+    padding:2rem;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.nav-links.show{
+
+    display:flex;
+
+}
 }
 
 /*==========================================================
@@ -131,7 +166,6 @@
     .hero-buttons{
 
         flex-direction:column;
-
         align-items:center;
 
     }
@@ -140,7 +174,6 @@
     .secondary-btn{
 
         width:100%;
-
         justify-content:center;
 
     }

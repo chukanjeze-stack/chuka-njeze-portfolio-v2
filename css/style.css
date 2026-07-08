@@ -243,6 +243,29 @@ header{
 
 }
 
+/*==============================================================
+    NAVBAR SCROLL EFFECT
+==============================================================*/
+
+.navbar.scrolled{
+
+    background:rgba(255,255,255,.98);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/*==============================================================
+    ACTIVE NAVIGATION
+==============================================================*/
+
+.nav-links a.active{
+
+    color:var(--secondary-color);
+
+    font-weight:700;
+
+}
 /*----------------------------------------------------------
 5.2 Logo
 ----------------------------------------------------------*/
@@ -640,6 +663,12 @@ header{
     10.0 PROJECTS
 ==========================================================*/
 
+.projects{
+
+    background:var(--section-bg);
+
+}
+
 .project-category{
 
     margin-bottom:70px;
@@ -648,9 +677,15 @@ header{
 
 .project-category h3{
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
     color:var(--primary-color);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
 
 }
 
@@ -658,9 +693,9 @@ header{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
 
-    gap:30px;
+    gap:35px;
 
 }
 
@@ -668,15 +703,13 @@ header{
 
     background:var(--white);
 
-    padding:35px;
+    border-radius:20px;
 
-    border-radius:18px;
+    overflow:hidden;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 
     transition:.4s;
-
-    position:relative;
 
 }
 
@@ -684,15 +717,121 @@ header{
 
     transform:translateY(-12px);
 
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    box-shadow:0 22px 45px rgba(0,0,0,.15);
 
 }
 
-.project-card h4{
+.project-card img{
 
-    margin:20px 0;
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.project-content{
+
+    padding:25px;
+
+}
+
+.project-content h4{
+
+    margin:15px 0;
 
     color:var(--primary-color);
+
+}
+
+.project-content p{
+
+    margin-bottom:20px;
+
+    color:#64748B;
+
+}
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.project-tech span{
+
+    background:#DCFCE7;
+
+    color:#166534;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.project-links{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.project-links a{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-links a:first-child{
+
+    background:var(--secondary-color);
+
+    color:#fff;
+
+}
+
+.project-links a:last-child{
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+}
+
+.project-links a:hover{
+
+    transform:translateY(-4px);
 
 }
 
@@ -702,11 +841,13 @@ header{
 
     padding:6px 14px;
 
-    border-radius:30px;
+    border-radius:25px;
 
     font-size:.8rem;
 
     font-weight:600;
+
+    margin-top:20px;
 
 }
 
@@ -733,6 +874,7 @@ header{
     color:#1D4ED8;
 
 }
+
 /*==========================================================
     14.0 ANIMATIONS
 ==========================================================*/
@@ -863,5 +1005,386 @@ header{
         grid-template-columns:1fr;
 
     }
+
+}
+
+/*==============================================================
+  HIGHLIGHTS
+==============================================================*/
+
+.highlights{
+
+    background:#f8fafc;
+
+}
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.highlight-card{
+
+    background:#fff;
+
+    padding:2rem;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.highlight-card i{
+
+    font-size:2.5rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:1rem;
+
+}
+
+.highlight-card h3{
+
+    font-size:2rem;
+
+    margin-bottom:.5rem;
+
+    color:var(--secondary-color);
+
+}
+
+.highlight-card p{
+
+    color:#555;
+
+}
+
+/*==============================================================
+  CONTACT
+==============================================================*/
+
+.contact{
+
+    background:#fff;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:3rem;
+
+    margin-top:3rem;
+
+    align-items:center;
+
+}
+
+.contact-info h3{
+
+    margin-bottom:1rem;
+
+}
+
+.contact-info>p{
+
+    margin-bottom:2rem;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1rem;
+
+    margin-bottom:1.8rem;
+
+}
+
+.contact-item i{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary-color);
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    transition:.35s;
+
+}
+
+.contact-item:hover i{
+
+    transform:scale(1.15) rotate(10deg);
+
+    background:var(--secondary-color);
+
+}
+.contact-item h4{
+
+    margin-bottom:.3rem;
+
+}
+
+.contact-item a{
+
+    color:#555;
+
+    text-decoration:none;
+
+}
+
+.contact-item a:hover{
+
+    color:var(--primary-color);
+
+}
+
+.contact-card{
+
+    background:linear-gradient(135deg,#14b8a6,#0f766e);
+
+    color:#fff;
+
+    padding:3.5rem;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card h3{
+
+    margin-bottom:1rem;
+
+}
+
+.contact-card p{
+
+    margin-bottom:2rem;
+
+    line-height:1.8;
+
+}
+
+.contact-card .btn{
+
+    background:#fff;
+
+    color:#0f766e;
+
+}
+
+.contact-card .btn:hover{
+
+    background:#f4f4f4;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.contact-card a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+    color:var(--secondary-color);
+
+}
+
+/*==============================================================
+  FOOTER
+==============================================================*/
+
+.footer{
+
+    background:#0f172a;
+
+    color:#fff;
+
+    padding:60px 8% 20px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:3rem;
+
+    margin-bottom:2rem;
+
+}
+
+.footer-about p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-top:1rem;
+
+}
+
+.footer-links ul{
+
+    list-style:none;
+
+}
+
+.footer-links li{
+
+    margin-bottom:.8rem;
+
+}
+
+.footer-links a{
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--secondary-color);
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-top:1rem;
+
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#1e293b;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    background:var(--secondary-color);
+
+    transform:translateY(-5px);
+
+}
+
+.footer hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+    margin:2rem 0;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    color:#94a3b8;
 
 }
